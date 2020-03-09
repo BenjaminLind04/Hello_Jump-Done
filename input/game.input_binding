@@ -1,0 +1,12 @@
+key_trigger {
+  input: KEY_LEFT
+  action: "v\303\244nster"
+}
+key_trigger {
+  input: KEY_RIGHT
+  action: "h\303\266ger"
+}
+mouse_trigger {
+  input: MOUSE_BUTTON_LEFT
+  action: "klicka"
+}

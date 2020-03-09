@@ -1,0 +1,15 @@
+
+
+local poäng = 0
+function on_message(self, message_id, message, sender)
+	if message_id == hash('y_position') then
+		if message.poäng > poäng then
+			poäng = math.floor(message.poäng)
+
+			poäng_node = gui.get_node('poäng')
+
+			gui.set_text(poäng_node, poäng)
+		end
+	end
+end
+

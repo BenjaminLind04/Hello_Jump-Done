@@ -1,0 +1,8 @@
+
+
+function update(self, dt)
+	-- get_world_position anger objektets position i relation till spelfönstret, inte dess föräldrarobjekt
+	if go.get_world_position().y < -500 then
+		go.delete()
+	end
+end

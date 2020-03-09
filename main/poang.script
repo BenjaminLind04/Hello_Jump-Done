@@ -1,0 +1,5 @@
+function update(self, dt)
+	hoppat = -go.get_world_position().y
+
+	msg.post('gui#poang', 'y_position', {poäng = -go.get_position().y})
+end
