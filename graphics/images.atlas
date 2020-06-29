@@ -1,14 +1,18 @@
 images {
-  image: "/grafik/bilder/platform.png"
+  image: "/graphics/images/platform.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/grafik/bilder/spelare.png"
+  image: "/graphics/images/player.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/grafik/bilder/monster.png"
+  image: "/graphics/images/monster.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/grafik/bilder/studsare.png"
+  image: "/graphics/images/bouncer.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 margin: 0
 extrude_borders: 0
