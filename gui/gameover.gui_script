@@ -5,11 +5,11 @@ end
 
 
 function on_input(self, action_id, action)
-	knapp = gui.get_node('spela_igen')
+	knapp = gui.get_node('play_again')
 
 	if gui.pick_node(knapp, action.x, action.y) then
-		if action_id == hash('klicka') and action.released then
-			msg.post('main:/loader', 'ladda_värld', {till = '#spelet'})
+		if action_id == hash('click') and action.released then
+			msg.post('main:/loader', 'load_world', {to = '#game'})
 		end
 	end
 end

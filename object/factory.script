@@ -1,0 +1,24 @@
+local collision_platform = ''
+
+function platform()
+	number = math.random(1, 100)
+	if number < 90 then
+		return '#jumper'
+	else
+		return '#platform'
+	end
+end
+
+
+function update(self, dt)
+	if collision_platform == '' or go.get_world_position(collision_platform).y < 1000 then
+		pos_y = go.get_world_position(collision_platform).y + math.random(130, 150)
+		pos_x = math.random(35, 500 - 35)
+		pos = vmath.vector3(pos_x, pos_y, 0)
+
+		factory = plattform()
+		collision_platform = factory.create(factory, pos)
+
+		msg.post(collision_platform, 'set_parent', { parent_id = go.get_id() } )
+	end
+end
